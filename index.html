@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+    <header class="bg-info">
+        <nav class="container navbar navbar-expand-lg navbar-light ">
+
+            <a class="navbar-brand logo text-white" href="index.html">Book Library</a>
+            <form class="form-inline my-2 my-lg-0 ml-auto">
+              <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search a Book">
+            </form>
+        </nav>
+    </header>
+    <section class="container border border-mute my-3 p-3 px-4 py-lg-4 px-lg-5">
+        <div class="row border border-mute p-3 mb-3">
+            <button id="addNewBook" class="btn btn-info">Add new Book</button>
+        </div>
+
+        <div id="bookContainer" class="row border border-mute pt-3 px-3 pt-lg-4 px-lg-4 justify-content-center">
+        </div>
+    </section>
+    <section id="addBookForm" class="justify-content-center align-items-center">
+        <div id="formContainer" class="col-lg-7 col-11 position-relative py-5  bg-light" >
+            <div class="form-header text-center mb-4">
+                <h2 class="text-info" >Add Your Book</h2>
+                <i id="close" class="far fa-times-circle  close-icon "></i>
+            </div>
+            <form class="py-1  px-md-4 px-2" >
+                <label for="bookNameInput">Book Name:</label>
+                <input type="text" placeholder="Book Name" id="bookNameInput" class="form-control mb-3">
+                <label for="bookAuthorInput">Book Author/s:</label>
+                <input type="text" placeholder="Book Author/s" id="bookAuthorInput" class="form-control mb-3">
+                <label for="bookImg">Select image:</label>
+                <input type="file" id="bookImg" accept="image/*"class="d-block mb-4">
+                <div class="text-center">
+                    <button id="addBook" type="button" class="btn btn-info mb-3">Add Your Book</button>
+                    <p id="exist" class="text-danger"></p>
+                </div>
+
+            </form>
+        </div>
+
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
